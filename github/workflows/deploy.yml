@@ -1,0 +1,23 @@
+name: 🚀 Deploy to Hostinger
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files to FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        # Mude o caminho abaixo para a pasta exata do seu subdomínio na Hostinger (ex: domains/maragonesa.adv.br/public_html/auxilioacidente)
+        server-dir: domains/maragonesa.adv.br/public_html/auxilioacidente/
+        
