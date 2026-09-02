@@ -16,7 +16,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: 89.117.7.196
-        username: ${{ secrets.FTP_USERNAME }}
+        username: u678866181
         password: ${{ secrets.FTP_PASSWORD }}
         # Mude o caminho abaixo para a pasta exata do seu subdomínio na Hostinger (ex: domains/maragonesa.adv.br/public_html/auxilioacidente)
         server-dir: domains/maragonesa.adv.br/aux-acid_html/
