@@ -15,7 +15,7 @@ jobs:
     - name: 📂 Sync files to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.FTP_SERVER }}
+        server: 89.117.7.196
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         # Mude o caminho abaixo para a pasta exata do seu subdomínio na Hostinger (ex: domains/maragonesa.adv.br/public_html/auxilioacidente)
