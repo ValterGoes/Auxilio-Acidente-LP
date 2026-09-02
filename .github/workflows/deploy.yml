@@ -19,4 +19,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         # Mude o caminho abaixo para a pasta exata do seu subdomínio na Hostinger (ex: domains/maragonesa.adv.br/public_html/auxilioacidente)
-        server-dir: domains/maragonesa.adv.br/aux-acid_html
+        server-dir: domains/maragonesa.adv.br/public_html/aux-acid_html/
