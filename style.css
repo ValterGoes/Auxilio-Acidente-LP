@@ -116,7 +116,7 @@
   }
   .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-500); }
  
-  /* ---------- Eyebrow ---------- */
+  /* ---------- Eyebrow celular ---------- */
   .eyebrow2 {
     display: inline-flex; align-items: center; gap: 8px;
     font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
