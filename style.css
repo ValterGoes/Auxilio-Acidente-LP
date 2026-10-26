@@ -180,6 +180,11 @@
   }
   .play-btn:hover { transform: scale(1.06); }
   .play-btn svg { width: 26px; height: 26px; margin-left: 4px; color: var(--navy-900); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
  
   /* ---------- Seção 2: Sobre & Cards ---------- */
   section.about { padding: 64px 0; background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -541,12 +546,13 @@
     width: 16px;
     height: 16px;
   }
-    section.hero { padding-top: 18px; }
+
+  section.hero { padding-top: 18px; }
     .hero-text-col { text-align: center; max-width: 100%; }
     .hero-text-col h1 { margin-top: 0; }
     .hero-grid, .cta-grid { grid-template-columns: 1fr; gap: 24px; }
-    .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
-    .hero h1 im { font-size: clamp(1.35rem, 5vw, 1.9rem); }
+    .hero h1 { font-size: clamp(2rem, 8.5vw, 3rem); text-align: justify; }
+    .hero h1 im { font-size: clamp(1.35rem, 5vw, 1.9rem); text-align: center;}
     .hero .sub { font-size: 1.05rem; margin-top: 20px; text-align: left; }
     .eyebrow {display: none;}
     .eyebrow2 {display: flex; max-width: 270px; margin-left: 15px; margin-bottom: 20px;}
@@ -561,6 +567,7 @@
     justify-content: center; 
     margin-top: 18px;
   }
+
     .video-panel {
       width: 100%;
       max-width: 100%;
