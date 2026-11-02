@@ -9,6 +9,25 @@
         })(window,document,'script','dataLayer','GTM-KRGMNPJ9');</script>
     <!-- End Google Tag Manager -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17439900046"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17439900046');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="wa.me"], a[href*="tel:"], .btn-primary, .btn-whatsapp-conversion, .top-cta').forEach(function (link) {
+      link.addEventListener('click', function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17439900046'
+        });
+      });
+    });
+  });
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
